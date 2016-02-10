@@ -20,11 +20,27 @@ body {
 }
 /*added*/
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #FFE600;
+  color: #FF6600;
+}
+/*added*/
+body.documents li#nav_layers a {
+  color: #FF6600;
+}
+/*added*/
+body.documents li#nav_maps a {
+  color: #FF6600;
 }
 /*added*/
 body.documents li#nav_documents a {
-  color: #FFE600;
+  color: #FF6600;
+}
+/*added*/
+body.documents li#nav_people a {
+  color: #FF6600;
+}
+/*added*/
+body.documents li#nav_groups a {
+  color: #FF6600;
 }
 .footer {
   border-top: 1px solid #cccccc;
