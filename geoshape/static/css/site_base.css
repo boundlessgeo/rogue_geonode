@@ -23,11 +23,11 @@ body {
   color: #FF6600;
 }
 /*added*/
-body.documents li#nav_layers a {
+body.layers li#nav_layers a {
   color: #FF6600;
 }
 /*added*/
-body.documents li#nav_maps a {
+body.maps li#nav_maps a {
   color: #FF6600;
 }
 /*added*/
@@ -35,11 +35,11 @@ body.documents li#nav_documents a {
   color: #FF6600;
 }
 /*added*/
-body.documents li#nav_people a {
+body.people li#nav_people a {
   color: #FF6600;
 }
 /*added*/
-body.documents li#nav_groups a {
+body.groups li#nav_groups a {
   color: #FF6600;
 }
 .footer {
