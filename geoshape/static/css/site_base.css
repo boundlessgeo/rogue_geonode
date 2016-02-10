@@ -13,11 +13,14 @@ body {
 .navbar-inverse {
   background-color: #29728C;
 }
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFFFF;
+}
 .footer {
   border-top: 1px solid #cccccc;
   height: 100px;
   padding: 23px;
-  background: #eee;
+  background: #29728C;
   margin-top: 10px;
 }
 #wrap {
