@@ -22,6 +22,10 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #FFE600;
 }
+/*added*/
+body.documents li#nav_documents a {
+  color: #FFE600;
+}
 .footer {
   border-top: 1px solid #cccccc;
   height: 100px;
