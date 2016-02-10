@@ -31,8 +31,16 @@ body {
   color: #FFFFFF;
 }
 /*added*/
+.footer .container .row {
+  color: #000000;
+}
+/*added*/
 a {
-  color: #8C3314;
+  color: #FF6600;
+}
+/*added*/
+a.hover{
+  color: #FFE600;
 }
 #wrap {
   height: auto !important;
