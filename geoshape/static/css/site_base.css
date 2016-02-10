@@ -39,7 +39,7 @@ a {
   color: #FF6600;
 }
 /*added*/
-a.hover{
+a:hover{
   color: #FFE600;
 }
 #wrap {
