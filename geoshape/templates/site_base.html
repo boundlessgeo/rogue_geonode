@@ -21,7 +21,6 @@
             <a href="/docs">{% trans "Documentation" %}</a>
           </div>
           <div class="col-md-4 pull-right">
-            <label>{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
             {% get_current_language as LANGUAGE %}
             <form class="form-inline" action="/i18n/setlang/" method="post">
