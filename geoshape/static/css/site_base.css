@@ -23,6 +23,9 @@ body {
   background: #29728C;
   margin-top: 10px;
 }
+.footer .container .row {
+  color: #FFFFFF;
+}
 #wrap {
   height: auto !important;
   height: 100%;
