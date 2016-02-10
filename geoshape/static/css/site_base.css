@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  color: #29728C;
 }
 .navbar-brand {
   background: url('../img/logo.png') no-repeat;
@@ -10,6 +9,9 @@ body {
   text-indent: -9999em;
   width: 140px;
   height: 30px;
+}
+.navbar-inverse {
+  background-color: #29728C;
 }
 .footer {
   border-top: 1px solid #cccccc;
