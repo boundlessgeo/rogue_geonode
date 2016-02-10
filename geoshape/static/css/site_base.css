@@ -18,6 +18,10 @@ body {
 .navbar-inverse .navbar-nav > li > a {
   color: #FFFFFF;
 }
+/*added*/
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #FFE600;
+}
 .footer {
   border-top: 1px solid #cccccc;
   height: 100px;
@@ -48,6 +52,8 @@ a:hover{
   padding: 10px 0 100px;
   margin-bottom: -100px;
   min-height: 100%;
+  /*added*/
+  background: #E6E9ED;
 }
 nav.filter h4 {
   border-radius: 3px;
