@@ -55,6 +55,10 @@ body.groups li#nav_groups a {
   color: #FFFFFF;
 }
 /*added*/
+.footer .container .row select{
+  color: #000000;
+}
+/*added*/
 a {
   color: #FF6600;
 }
