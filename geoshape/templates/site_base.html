@@ -20,7 +20,7 @@
             {% trans "Powered by" %} <a href="http://geoshape.org" target="_new">{% trans "GeoSHAPE" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
             <a href="/docs">{% trans "Documentation" %}</a>
           </div>
-          <div class="col-md-4 pull-right">
+          <div class="col-md-6 pull-right">
             <label>{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
             {% get_current_language as LANGUAGE %}
