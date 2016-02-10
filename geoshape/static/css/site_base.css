@@ -10,9 +10,11 @@ body {
   width: 140px;
   height: 30px;
 }
+/*added*/
 .navbar-inverse {
   background-color: #29728C;
 }
+/*added*/
 .navbar-inverse .navbar-nav > li > a {
   color: #FFFFFF;
 }
@@ -20,11 +22,17 @@ body {
   border-top: 1px solid #cccccc;
   height: 100px;
   padding: 23px;
+  /*changed background color*/
   background: #29728C;
   margin-top: 10px;
 }
+/*added*/
 .footer .container .row {
   color: #FFFFFF;
+}
+/*added*/
+a {
+  color: #8C3314;
 }
 #wrap {
   height: auto !important;
