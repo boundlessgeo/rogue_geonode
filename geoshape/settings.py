@@ -87,7 +87,7 @@ ROOT_URLCONF = 'geoshape.urls'
 INSTALLED_APPS = (
     'geonode.contrib.geogig',
     'geonode.contrib.slack',
-    'geoshape.file_service',
+    'geoshape.fileservice',
     'geoshape.core',
     'django_classification_banner',
     'maploom',
@@ -162,11 +162,12 @@ LOGGING = {
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django_classification_banner.context_processors.classification',
     'geoshape.core.context_processors.security_warnings',
-    'geoshape.core.context_processors.rogue'
+    'geoshape.core.context_processors.rogue',
+    'geoshape.core.context_processors.fileservice',
 )
 
 # Add additional paths (as regular expressions) that don't require authentication.
-AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/', '/api/tileset/*', '/gsschema/*',)
+AUTH_EXEMPT_URLS = ('/i18n/setlang/', '/api/tileset/*', '/gsschema/*', '/api/fileservice/*',)
 
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
@@ -259,7 +260,15 @@ MAP_BASELAYERS = [
 ]
 
 if CORS_ENABLED:
-    INSTALLED_APPS =  ('corsheaders',) + INSTALLED_APPS
+    INSTALLED_APPS = ('corsheaders',) + INSTALLED_APPS
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('corsheaders.middleware.CorsMiddleware',)
     CORS_ORIGIN_ALLOW_ALL = True
     CORS_ALLOW_METHODS = ('GET',)
+
+FILESERVICE_CONFIG = {
+    'store_dir': '/var/lib/geoserver_data/file-service-store',
+    # example: ('*', ) or ('.mov', '.jpg', ...),
+    'types_allowed': ('*', ),
+    # maploom will replace {} with the media item name such as 7ff194b54ab57a829094dc0afc624c78815ec02c.jpg
+    'url_template': '/api/fileservice/view/{}'
+}
