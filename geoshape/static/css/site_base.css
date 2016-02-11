@@ -88,6 +88,7 @@ nav.filter h4 a.toggle {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   background: url('../img/alps_background.png') no-repeat left bottom;
   background-size: cover;
+  opacity: 0.6;
 }
 .jumbotron h1 {
   font-weight: 600;
