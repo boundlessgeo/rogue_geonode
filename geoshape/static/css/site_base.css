@@ -86,6 +86,9 @@ nav.filter h4 a.toggle {
 .jumbotron h1 {
   font-weight: bold;
 }
+.jumbotron p{
+  font-size: 25px;
+}
 .dropdown-menu > li a {
   display: block;
   padding: 3px 20px;
