@@ -42,7 +42,11 @@ body.people li#nav_people a {
 body.groups li#nav_groups a {
   color: #FF6600;
 }
-.footer {
+.page-wrap{
+  min-height: 100%;
+  margin-bottom: -60px;
+}
+.footer, .page-wrap:after{
   border-top: 1px solid #cccccc;
   height: 60px;
   bottom: 0px;
