@@ -13,7 +13,7 @@
   <div class="jumbotron">
     <div class="container">
       <h1><img src="../static/img/icon.png" alt="OpenGeo Node icon">  {% trans "OpenGeo Node" %} </h1>
-      <p>{% blocktrans %} Something particular to OpenGeo Node and another something particular to OpenGeo Node. One more for length, something particular to OpenGeo Node. {% endblocktrans %}</p>
+      <p>{% blocktrans %} A collaborative hub to publish, share, edit and version all your geospatial conent. {% endblocktrans %}</p>
     </div>
   </div>
   {% endblock %}
@@ -26,14 +26,14 @@
       <div class="col-md-4">
         <a class="info-blurb" href="{% url "layer_browse" %}">
           <p class="text-center">
-            <!-- <i class="fa fa-square-o fa-5x rotate-45"></i></p> -->
-          <span class="fa-stack fa-rotate-90 fa-5x" >
+            <i class="fa fa-square-o fa-5x rotate-45"></i></p>
+          <!-- <span class="fa-stack fa-rotate-90 fa-5x" >
             <i class="fa fa-stop fa-layers fa-stack-1x fa-2x" style="left: 0;"></i>
             <i class="fa fa-stop fa-layers fa-stack-1x fa-2x" style="left: -.15em;color:#E6E9ED;"></i>
             <i class="fa fa-stop fa-layers fa-stack-1x fa-2x" style="left: -.3em;"></i>
             <i class="fa fa-stop fa-layers fa-stack-1x fa-2x" style="left: -.45em;color:#E6E9ED;"></i>
             <i class="fa fa-stop fa-layers fa-stack-1x fa-2x" style="left: -.6em;"></i>
-          </span>
+          </span> -->
           <h2 class="text-center">{{ facets.layer|default:"No" }} Layer{{ facets.layer|pluralize }}</h2>
           <p class="text-center">{% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}</p>
           <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore Layers" %} &raquo;</a></p>
