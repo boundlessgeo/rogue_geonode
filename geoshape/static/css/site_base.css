@@ -53,8 +53,8 @@ a {
 a:hover{
   color: #FFE600;
 }
-a .info-blurb {
-  color: #FFFFFF;
+a .info-blurb{
+  color: #000000;
 }
 #wrap {
   height: auto !important;
