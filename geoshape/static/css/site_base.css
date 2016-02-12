@@ -127,6 +127,11 @@ nav.filter h4 a.toggle {
 .user-avatar img {
   border-radius: 3px;
 }
+.fa-layers {
+  transform:rotate(50deg) skewX(24deg) skewY(12deg);
+  -webkit-transform:rotate(50deg) skewX(24deg) skewY(12deg);
+  -ms-transform:rotate(50deg) skewX(24deg) skewY(12deg);
+}
 /* Hacks */
 input[value='Invite User'] {
   margin-top: 10px;
