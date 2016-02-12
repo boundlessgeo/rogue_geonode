@@ -58,6 +58,7 @@ a:hover{
 }
 .info-blurb:hover{
   color: #000000;
+  text-decoration: none;
 }
 #wrap {
   height: auto !important;
