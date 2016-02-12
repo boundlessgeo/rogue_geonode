@@ -42,14 +42,9 @@ body.people li#nav_people a {
 body.groups li#nav_groups a {
   color: #FF6600;
 }
-.page-wrap{
-  min-height: 100%;
-  margin-bottom: -60px;
-}
-.footer, .page-wrap:after{
+.footer {
   border-top: 1px solid #cccccc;
-  height: 60px;
-  bottom: 0px;
+  height: 100px;
   padding: 23px;
   /*changed background color*/
   background: #29728C;
