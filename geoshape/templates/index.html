@@ -35,7 +35,7 @@
               <i class="fa fa-stop fa-layers fa-stack-1x fa-2x" style="left: -.6em;"></i>
             </span>
           </p>
-          <h2 class="text-center">{{ facets.layer|default:"No" }} Layer{{ facets.layer|pluralize }}</h2>
+          <h2 class="text-center stacked">{{ facets.layer|default:"No" }} Layer{{ facets.layer|pluralize }}</h2>
           <p class="text-center">{% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}</p>
           <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore Layers" %} &raquo;</a></p>
         </a>
