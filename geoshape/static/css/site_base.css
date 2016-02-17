@@ -137,6 +137,8 @@ nav.filter h4 a.toggle {
 }
 .fa-stack{
   top: 25px;
+  vertical-align: inherit;
+
 }
 /* Hacks */
 input[value='Invite User'] {
