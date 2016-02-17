@@ -135,6 +135,9 @@ nav.filter h4 a.toggle {
   -webkit-transform:rotate(50deg) skewX(24deg) skewY(12deg);
   -ms-transform:rotate(50deg) skewX(24deg) skewY(12deg);
 }
+.fa-stack{
+  top: 25px;
+}
 /* Hacks */
 input[value='Invite User'] {
   margin-top: 10px;
