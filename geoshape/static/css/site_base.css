@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 .navbar-brand {
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/icon.png') no-repeat;
   margin-top: 10px;
   overflow: hidden;
   text-indent: -9999em;
