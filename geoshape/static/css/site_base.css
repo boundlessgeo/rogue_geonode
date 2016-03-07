@@ -34,6 +34,9 @@ body.people li#nav_people a {
 body.groups li#nav_groups a {
   color: #FF6600;
 }
+.title {
+  line-height: 96px;
+}
 .footer {
   border-top: 1px solid #cccccc;
   height: 60px;
