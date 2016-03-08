@@ -104,7 +104,9 @@ nav.filter h4 a.toggle {
 .dropdown-menu form {
   padding: inherit;
 }
-
+#id_email{
+  width: 300px;
+}
 /*#search_input {
   margin-left: 150px;
 }*/
