@@ -104,6 +104,10 @@ nav.filter h4 a.toggle {
 .dropdown-menu form {
   padding: inherit;
 }
+
+#search_input {
+  margin-left: 300px;
+}
 /* Profile */
 .resource-list {
   list-style: none;
@@ -147,9 +151,6 @@ nav.filter h4 a.toggle {
   margin-top: 28px;
 }
 
-#search_input {
-  float: right;
-}
 /* Hacks */
 input[value='Invite User'] {
   margin-top: 10px;
