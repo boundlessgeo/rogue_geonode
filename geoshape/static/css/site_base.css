@@ -63,6 +63,9 @@ a:hover{
   color: #000000;
   text-decoration: none;
 }
+.text-center.blurb{
+  height: 100px;
+}
 #wrap {
   height: auto !important;
   height: 100%;
