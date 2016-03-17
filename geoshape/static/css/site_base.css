@@ -112,9 +112,9 @@ nav.filter h4 a.toggle {
 #id_email{
   width: 300px;
 }
-#search_input {
+/*#search_input {
   margin-left: 150px;
-}
+}*/
 /* Profile */
 .resource-list {
   list-style: none;
