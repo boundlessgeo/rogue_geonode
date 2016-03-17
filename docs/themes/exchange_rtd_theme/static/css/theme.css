@@ -5007,7 +5007,7 @@ a:hover {
 }
 
 .rst-content .guilabel, .rst-content .menuselection {
-  font-weight: bold; 
+  font-weight: bold;
   text-shadow: 1px 1px 0 #dddddd;
   border: 1px solid #aaaaaa;
   padding: 0px 3px;
@@ -5070,7 +5070,7 @@ div[class^='highlight'] pre {
   height: 40px;
   overflow: hidden;
   text-indent: -9999em;
-  background: url("../img/opengeo-logo.png") no-repeat;
+  background: url("../img/boundless-exchange-logo.png") no-repeat;
 }
 #header .suite_logo_only {
   display: inline-block;
@@ -5078,7 +5078,7 @@ div[class^='highlight'] pre {
   margin-top: 1em;
 }
 #header .suite_logo_only a {
-  background: url("../img/opengeo-logo-only.png") no-repeat;
+  background: url("../img/boundless-exchange-logo.png") no-repeat;
   width: 40px;
   height: 40px;
   text-indent: -9999em;
@@ -5190,7 +5190,7 @@ div[class^='highlight'] pre {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
   #header .suite_logo a {
-    background: url("../img/opengeo-logo@2x.png") no-repeat;
+    background: url("../img/boundless-exchange-logo@2x.png") no-repeat;
     background-size: 304px 40px;
   }
 }
@@ -5373,7 +5373,7 @@ div[class^='highlight'] pre {
   width: 70px;
 }
 .back-to-suite .back-to-suite-inner {
-  background: url("../img/opengeo-logo-only.png") no-repeat;
+  background: url("../img/boundless-exchange-logo.png") no-repeat;
   height: 40px;
   width: 40px;
   margin: 1em auto;
