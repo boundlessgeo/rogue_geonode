@@ -1,103 +1,103 @@
 html,
 body {
-  height: 100%;
+  /*height: 100%;*/
 }
 .navbar-brand {
-  background: url('../img/logo.png') no-repeat;
+  /*background: url('../img/logo.png') no-repeat;
   margin-top: 10px;
   overflow: hidden;
   text-indent: -9999em;
   width: 180px;
-  height: 35px;
+  height: 35px;*/
 }
 .navbar-inverse {
-  background-color: #29728C;
+  /*background-color: #29728C;*/
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
 body.layers li#nav_layers a {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
 body.maps li#nav_maps a {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
 body.documents li#nav_documents a {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
 body.people li#nav_people a {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
 body.groups li#nav_groups a {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
-.title {
+/*.title {
   line-height: 96px;
-}
+}*/
 .footer {
-  border-top: 1px solid #cccccc;
+  /*border-top: 1px solid #cccccc;
   height: 60px;
   padding: 17px;
   background: #29728C;
-  margin-top: 10px;
+  margin-top: 10px;*/
 }
 .footer .container .row {
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
 }
 .footer .container .row select{
-  color: #000000;
+  /*color: #000000;*/
 }
 a {
-  color: #FF6600;
+  /*color: #FF6600;*/
 }
 a:hover{
-  color: #009888;
+  /*color: #009888;*/
 }
 .info-blurb{
-  color: #000000;
+  /*color: #000000;*/
 }
 .info-blurb:hover{
-  color: #000000;
-  text-decoration: none;
+  /*color: #000000;
+  text-decoration: none;*/
 }
 .text-center.blurb{
   /*height: 60px;*/
 }
 #wrap {
-  height: auto !important;
+  /*height: auto !important;
   height: 100%;
   padding: 10px 0 60px;
   margin-bottom: -70px;
   min-height: 100%;
-  background: #E6E9ED;
+  background: #E6E9ED;*/
 }
 nav.filter h4 {
-  border-radius: 3px;
+  /*border-radius: 3px;*/
 }
 nav.filter h4 a.toggle {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 .jumbotron {
-  height: 300px;
+  /*height: 300px;
   padding: 40px;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   background: url('../img/alps_background.png') no-repeat left bottom;
   background-size: cover;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
 }
 .jumbotron h1 {
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .jumbotron p{
-  font-size: 25px;
+  /*font-size: 25px;*/
   /*padding-left: 147px;*/
   /*font-weight: bold;*/
 }
-.dropdown-menu > li a {
+/*.dropdown-menu > li a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -105,61 +105,61 @@ nav.filter h4 a.toggle {
   line-height: 1.42857143;
   color: #333;
   white-space: nowrap;
-}
-.dropdown-menu form {
+}*/
+/*.dropdown-menu form {
   padding: inherit;
-}
-#id_email{
+}*/
+/*#id_email{
   width: 300px;
-}
+}*/
 
 /* Profile */
-.resource-list {
+/*.resource-list {
   list-style: none;
-}
-.resource-list > li {
+}*/
+/*.resource-list > li {
   padding: 3px;
-}
-.resource-list .resource-description > h5 {
+}*/
+/*.resource-list .resource-description > h5 {
   margin: 2px;
-}
-.resource-list .resource-thumbnail {
+}*/
+/*.resource-list .resource-thumbnail {
   padding-left: 0px;
   padding-right: 0px;
   max-widht: 100px;
-}
-.resource-list .resource-thumbnail img {
+}*/
+/*.resource-list .resource-thumbnail img {
   max-width: 50px;
   border-radius: 3px;
   margin-top: 3px;
-}
-.select2-container {
+}*/
+/*.select2-container {
   width: 250px;
-}
-.small-text {
+}*/
+/*.small-text {
   font-size: 13px;
-}
-.user-avatar img {
+}*/
+/*.user-avatar img {
   border-radius: 3px;
-}
-.fa-layers {
+}*/
+/*.fa-layers {
   transform:rotate(50deg) skewX(24deg) skewY(12deg);
   -webkit-transform:rotate(50deg) skewX(24deg) skewY(12deg);
   -ms-transform:rotate(50deg) skewX(24deg) skewY(12deg);
-}
-.fa-stack {
+}*/
+/*.fa-stack {
   top: 25px;
   vertical-align: inherit;
 
-}
-.stacked {
+}*/
+/*.stacked {
   margin-top: 28px;
-}
+}*/
 
 /* Hacks */
-input[value='Invite User'] {
+/*input[value='Invite User'] {
   margin-top: 10px;
-}
-span[id^="error_"].help-inline {
+}*/
+/*span[id^="error_"].help-inline {
   color: #d9534f;
-}
+}*/
