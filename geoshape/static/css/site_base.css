@@ -64,7 +64,7 @@ a:hover{
   text-decoration: none;
 }
 .text-center.blurb{
-  /*height: 60px;*/
+  height: 60px;
 }
 #wrap {
   height: auto !important;
@@ -94,8 +94,8 @@ nav.filter h4 a.toggle {
 }
 .jumbotron p{
   font-size: 25px;
-  /*padding-left: 147px;*/
-  /*font-weight: bold;*/
+  padding-left: 147px;
+  font-weight: bold;
 }
 .dropdown-menu > li a {
   display: block;
@@ -112,7 +112,9 @@ nav.filter h4 a.toggle {
 #id_email{
   width: 300px;
 }
-
+/*#search_input {
+  margin-left: 150px;
+}*/
 /* Profile */
 .resource-list {
   list-style: none;
