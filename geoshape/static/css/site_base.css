@@ -155,7 +155,9 @@ nav.filter h4 a.toggle {
 .stacked {
   margin-top: 28px;
 }
-
+#search_input {
+  float: right;
+}
 /* Hacks */
 input[value='Invite User'] {
   margin-top: 10px;
