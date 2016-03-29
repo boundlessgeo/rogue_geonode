@@ -33,14 +33,29 @@ Continue below at :ref:`setup.configuration`.
 RPM
 ~~~
 
-#. ADD REPO DETAILS
+Boundless Exchange requires either Red Hat Enterprise Linux (RHEL) 6 or CentOS 6.
 
-#. ADD PACKAGE DETAILS
+#. In a terminal, create a new file ``/etc/yum.repos.d/exchange-centos6.repo`` and populate it with the following content::
+
+     [exchange-centos6]
+     name=Boundless Exchange for RHEL6/Centos6
+     baseurl=http://USERNAME:PASSWORD@exchange-rpm.boundlessgeo.com/exchange/centos6
+     enabled=1
+     gpgcheck=0
+
+   Make sure to replace ``USERNAME`` and ``PASSWORD`` with the credential supplied to you by Boundless.
+
+#. Save and close the the file.
+
+#. To install, run the following command:::
+
+     sudo yum install exchange.x86_64
+
+   This will install Exchange and required dependencies.
 
 #. Once completed, a web server should be running on port 80.
 
 Continue below at :ref:`setup.configuration`.
-
 
 .. _setup.configuration:
 
@@ -53,9 +68,9 @@ Now that the software is installed, there are a few extra configuration steps ne
 
 #. Update your IP address to your system::
 
-     geoshape-config updateip <IP_ADDRESS>
+     geoshape-config updateip IP_ADDRESS
 
-   Making sure to replace ``<IP_ADDRESS>`` with the IP address of your system.
+   Make sure to replace ``IP_ADDRESS`` with the IP address of your system.
 
 #. Update the GeoServer catalog of layers to include the IP address::
 
