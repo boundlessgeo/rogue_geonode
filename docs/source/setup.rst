@@ -28,6 +28,8 @@ The virtual machine is in the OVA exchange format, which is compatible with all 
 
 #. Test your network connection by typing in the IP address of the VM in your host's browser. You should see the login screen for Boundless Exchange.
 
+   .. note:: You can use the ``ifconfig`` command on the terminal of the VM to determine the IP address.
+
 Continue below at :ref:`setup.configuration`.
 
 RPM
@@ -37,25 +39,44 @@ Boundless Exchange requires either Red Hat Enterprise Linux (RHEL) 6 or CentOS 6
 
 #. In a terminal, create a new file ``/etc/yum.repos.d/exchange-centos6.repo`` and populate it with the following content::
 
-     [exchange-centos6]
-     name=Boundless Exchange for RHEL6/Centos6
-     baseurl=http://USERNAME:PASSWORD@exchange-rpm.boundlessgeo.com/exchange/centos6
-     enabled=1
-     gpgcheck=0
+      [exchange-centos6]
+      name=Boundless Exchange for RHEL6/Centos6
+      baseurl=http://USERNAME:PASSWORD@exchange-rpm.boundlessgeo.com/exchange/centos6
+      enabled=1
+      gpgcheck=0
 
-   Make sure to replace ``USERNAME`` and ``PASSWORD`` with the credential supplied to you by Boundless.
+   Make sure to replace ``USERNAME`` and ``PASSWORD`` with the credentials supplied to you by Boundless.
 
-#. Save and close the the file.
+#. Save and close the file.
+
+#. Create a new file ``/etc/yum.repos.d/pgdg95.repo`` and populate it with the following content::
+
+      [pgdg95]
+      name=PostgreSQL 9.5 $releasever - $basearch
+      baseurl=https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-$releasever-$basearch
+      enabled=1
+      gpgcheck=1
+      gpgkey=https://yum.boundlessps.com/RPM-GPG-KEY-PGDG-95
+
+#. Save and close the file.
+
+#. Create a new file ``/etc/yum.repos.d/rabbitmq-server.repo`` and populate it with the following content::
+
+      [rabbitmq-server]
+      name=rabbitmq_rabbitmq-server
+      baseurl=https://packagecloud.io/rabbitmq/rabbitmq-server/el/$releasever/$basearch
+      enabled=1
+      gpgcheck=0
+
+#. Save and close the file.
 
 #. To install, run the following command:::
 
      sudo yum install exchange.x86_64
 
-   This will install Exchange and required dependencies.
+   This will install Boundless Exchange and required dependencies.
 
-#. Once completed, a web server should be running on port 80.
-
-Continue below at :ref:`setup.configuration`.
+Once completed, a web server should be running on port 80. Continue below at :ref:`setup.configuration`.
 
 .. _setup.configuration:
 
