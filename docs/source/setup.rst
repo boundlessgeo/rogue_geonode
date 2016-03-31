@@ -83,7 +83,7 @@ Boundless Exchange requires either Red Hat Enterprise Linux (RHEL) 6 or CentOS 6
 
 #. To install, run the following command:::
 
-     sudo yum install geoshape
+     sudo yum install geoshape geoshape-geoserver elasticsearch postgis-postgresql95
 
    This will install Boundless Exchange and required dependencies.
 
