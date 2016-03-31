@@ -1,0 +1,19 @@
+---
+applications:
+- name: exchange
+  buildpack: https://github.com/boundlessgeo/geonode-python-buildpack
+  command: null
+  instances: 1
+  memory: 1G
+  disk_quota: 2G
+  env:
+    SECRET_KEY: 'aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
+    DEBUG: 'True'
+    DATABASE_URL: 'postgres://storyscapes:CHANGEME@geoshape.geointservices.io:5432/storyscapes'
+    POSTGIS_URL: 'postgis://storyscapes:CHANGEME@geoshape.geointservices.io:5432/storyscapes_data'
+    GS_URL: 'http://geoshape.geointservices.io/geoserver/'
+    GS_USER: 'admin'
+    GS_PASSWORD: 'CHANGEME'
+    ES_URL: 'http://geoshape.geointservices.io:9200/'
+    ES_INDEX: 'storyscapes'
+    RABBITMQ_URL: 'amqp://storyscapes:CHANGEME@geoshape.geointservices.io:5672'
