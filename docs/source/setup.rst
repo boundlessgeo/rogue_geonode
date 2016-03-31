@@ -70,9 +70,20 @@ Boundless Exchange requires either Red Hat Enterprise Linux (RHEL) 6 or CentOS 6
 
 #. Save and close the file.
 
+#. Create a new file ``/etc/yum.repos.d/elasticsearch-17.repo`` and populate it with the following content::
+
+      [elasticsearch-1.7]
+      name=Elasticsearch repository for 1.7.x packages
+      baseurl=https://packages.elastic.co/elasticsearch/1.7/centos
+      enabled=1
+      gpgcheck=1
+      gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+
+#. Save and close the file.
+
 #. To install, run the following command:::
 
-     sudo yum install exchange.x86_64
+     sudo yum install geoshape
 
    This will install Boundless Exchange and required dependencies.
 
