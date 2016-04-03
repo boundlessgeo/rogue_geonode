@@ -1,19 +1,26 @@
 ---
 applications:
-- name: exchange
-  buildpack: https://github.com/boundlessgeo/geonode-python-buildpack
+- name: test-bex
+  buildpack: https://github.com/boundlessgeo/geonode-python-buildpack#cf-pip-test
   command: null
   instances: 1
   memory: 1G
   disk_quota: 2G
   env:
+    CF_ENABLED: 'True'
     SECRET_KEY: 'aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
     DEBUG: 'True'
-    DATABASE_URL: 'postgres://storyscapes:CHANGEME@geoshape.geointservices.io:5432/storyscapes'
-    POSTGIS_URL: 'postgis://storyscapes:CHANGEME@geoshape.geointservices.io:5432/storyscapes_data'
+    DATABASE_URL: 'postgres://exchange:CHANGEME@geoshape.geointservices.io:5432/exchange'
+    POSTGIS_URL: 'postgis://exchange:CHANGEME@geoshape.geointservices.io:5432/exchange_data'
+    GEONODE_ADMIN_PASSWORD: 'CHANGEME'
     GS_URL: 'http://geoshape.geointservices.io/geoserver/'
     GS_USER: 'admin'
     GS_PASSWORD: 'CHANGEME'
     ES_URL: 'http://geoshape.geointservices.io:9200/'
-    ES_INDEX: 'storyscapes'
-    RABBITMQ_URL: 'amqp://storyscapes:CHANGEME@geoshape.geointservices.io:5672'
+    ES_INDEX: 'exchange'
+    RABBITMQ_URL: 'amqp://exchange:CHANGEME@geoshape.geointservices.io:5672'
+    USE_AWS_S3_STATIC: 'True'
+    AWS_S3_CUSTOM_DOMAIN: ''
+    AWS_STORAGE_BUCKET_NAME: 'boundless-cloudfoundry'
+    AWS_ACCESS_KEY_ID: 'CHANGEME'
+    AWS_SECRET_ACCESS_KEY: 'CHANGEME'

@@ -272,3 +272,10 @@ FILESERVICE_CONFIG = {
     # maploom will replace {} with the media item name such as 7ff194b54ab57a829094dc0afc624c78815ec02c.jpg
     'url_template': '/api/fileservice/view/{}'
 }
+
+CF_ENABLED = os.environ.get('CF_ENABLED')
+if CF_ENABLED:
+    try:
+        from cf.settings import *
+    except ImportError:
+        pass
