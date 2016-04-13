@@ -3,13 +3,41 @@ import os
 import dj_database_url
 from geoshape.settings import *
 
-if 'DEBUG' in os.environ:
-    DEBUG = os.environ.get('DEBUG')
+AUTH_LDAP = os.environ.get('AUTH_LDAP')
+
+if AUTH_LDAP > 0:
+    AUTHENTICATION_BACKENDS = (
+        'django_auth_ldap.backend.LDAPBackend',
+        'django.contrib.auth.backends.ModelBackend',
+        'guardian.backends.ObjectPermissionBackend',
+    )
+
+    AUTH_LDAP_SERVER_URI = os.environ.get('AUTH_LDAP_SERVER_URI')
+
+    import ldap
+    from django_auth_ldap.config import LDAPSearch
+
+    LDAP_SEARCH_DN = os.environ.get('LDAP_SEARCH_DN')
+    AUTH_LDAP_USER = os.environ.get('AUTH_LDAP_USER')
+    AUTH_LDAP_USER_DN_TEMPLATE = os.environ.get('AUTH_LDAP_USER_DN_TEMPLATE')
+    AUTH_LDAP_BIND_DN = os.environ.get('AUTH_LDAP_BIND_DN')
+    AUTH_LDAP_BIND_PASSWORD = os.environ.get('AUTH_LDAP_BIND_PASSWORD')
+    AUTH_LDAP_USER_ATTR_MAP = {
+        'first_name': 'givenName',
+        'last_name': 'sn',
+        'email': 'mail',
+    }
+    AUTH_LDAP_USER_SEARCH = LDAPSearch(LDAP_SEARCH_DN,
+                                       ldap.SCOPE_SUBTREE, AUTH_LDAP_USER)
+CF_DEBUG = os.environ.get('CF_DEBUG')
+
+if CF_DEBUG > 0:
+    DEBUG = True
 
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
-USE_AWS_S3_STATIC = os.environ.get('USE_AWS_S3_STATIC')
+AWS_QUERYSTRING_AUTH = False
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_BUCKET_NAME = AWS_STORAGE_BUCKET_NAME
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
@@ -26,16 +54,8 @@ STATICFILES_LOCATION = 'static'
 MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_BUCKET_DOMAIN, MEDIAFILES_LOCATION)
 DEFAULT_FILE_STORAGE = 'cf.s3utils.MediaStorage'
-
-if USE_AWS_S3_STATIC > 0:
-    STATICFILES_STORAGE = 'cf.s3utils.StaticStorage'
-    STATIC_URL = "https://%s/%s/" % (AWS_S3_BUCKET_DOMAIN, STATICFILES_LOCATION)
-else:
-    STATICFILES_STORAGE = 'cf.s3utils.StaticStorage'
-    STATIC_URL = "https://%s/%s/" % (AWS_S3_BUCKET_DOMAIN, STATICFILES_LOCATION)
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, STATICFILES_LOCATION)
-    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'cf.s3utils.StaticStorage'
+STATIC_URL = "https://%s/%s/" % (AWS_S3_BUCKET_DOMAIN, STATICFILES_LOCATION)
 
 POSTGIS = os.environ.get('POSTGIS_URL')
 DATABASES = {

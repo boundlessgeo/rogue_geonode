@@ -1,3 +1,0 @@
-#!/bin/bash
-source /var/lib/geonode/bin/activate
-django-admin.py $@ --settings=geonode.settings
